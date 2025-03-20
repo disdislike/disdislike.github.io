@@ -10,6 +10,19 @@
     <h1>效率工具箱</h1>
 
     <div class="category">
+        <h2>搜索引擎</h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="输入关键词搜索">
+            <select id="searchEngine">
+                <option value="https://www.bing.com/search?q=" selected>必应 Bing</option>
+                <option value="https://www.google.com/search?q=">Google</option>
+                <option value="https://www.baidu.com/s?wd=">百度</option>
+            </select>
+            <button onclick="performSearch()">搜索</button>
+        </div>
+    </div>
+
+    <div class="category">
         <h2>AI 工具</h2>
         <div class="link-grid">
             <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
@@ -17,17 +30,16 @@
             <a href="https://claude.ai" target="_blank">Claude</a>
             <a href="https://chatglm.cn/" target="_blank">智谱</a>
             <a href="https://tongyi.aliyun.com/" target="_blank">通义</a>
-            <a href="https://grok.com/" target="_blank">grok</a>
+            <a href="https://grok.com/" target="_blank">Grok</a>
+            <a href="https://cloud.siliconflow.cn/models" target="_blank">硅基流动</a>
         </div>
     </div>
 
     <div class="category">
         <h2>编程练习</h2>
         <div class="link-grid">
-            <div class="link-pair">
-                <a href="https://leetcode.com" target="_blank">LeetCode (EN)</a>
-                <a href="https://leetcode.cn" target="_blank">LeetCode (CN)</a>
-            </div>
+            <a href="https://leetcode.com" target="_blank">LeetCode</a>
+            <a href="https://leetcode.cn" target="_blank">力扣</a>
             <a href="https://www.kaggle.com" target="_blank">Kaggle</a>
             <a href="https://www.codewars.com" target="_blank">Codewars</a>
             <a href="https://exercism.org" target="_blank">Exercism</a>
@@ -55,6 +67,16 @@
             <a href="https://www.docker.com" target="_blank">Docker</a>
         </div>
     </div>
+
+    <div class="category">
+        <h2>摸鱼</h2>
+        <div class="link-grid">
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+            <a href="https://www.bilibili.com" target="_blank">Bilibili</a>
+            <a href="https://www.douyin.com/" target="_blank">抖音</a>
+        </div>
+    </div>
+    
 </body>
 </html>
 
