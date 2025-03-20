@@ -67,15 +67,6 @@ a:hover {
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 1rem;
-    }
-    
-    .link-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* 搜索框容器 */
 .search-box {
@@ -135,3 +126,13 @@ a:hover {
     transform: scale(0.95);
 }
 
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+}
