@@ -68,21 +68,21 @@ a:hover {
 }
 
 
-/* 搜索框容器 */
+/* 让搜索框居中对齐，并增加美观的圆角设计 */
 .search-box {
     display: flex;
-    gap: 0.5rem;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
     background: white;
     padding: 0.6rem;
     border-radius: 50px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* 输入框样式 */
+/* 统一输入框的大小、字体和背景 */
 .search-box input {
     flex: 2;
     padding: 0.8rem 1rem;
@@ -91,9 +91,10 @@ a:hover {
     font-size: 1rem;
     outline: none;
     background-color: #f8f9fa;
+    min-width: 120px;
 }
 
-/* 搜索引擎选择框 */
+/* 统一搜索引擎选择框的样式 */
 .search-box select {
     flex: 1;
     padding: 0.8rem;
@@ -103,9 +104,16 @@ a:hover {
     font-size: 1rem;
     outline: none;
     cursor: pointer;
+    appearance: none; /* 隐藏默认样式，兼容 Edge */
+    text-align: center;
 }
 
-/* 搜索按钮 */
+/* Edge 兼容性增强：让 select 不会出现额外 padding */
+.search-box select::-ms-expand {
+    display: none; /* 隐藏 Edge 额外的箭头 */
+}
+
+/* 让搜索按钮居中，并增加动效 */
 .search-box button {
     padding: 0.8rem 1.5rem;
     border: none;
@@ -114,16 +122,18 @@ a:hover {
     border-radius: 50px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background 0.3s, transform 0.1s;
+    transition: background 0.3s ease, transform 0.1s ease;
+    min-width: 50px;
 }
 
-/* 按钮悬停和点击效果 */
+/* 按钮悬停效果 */
 .search-box button:hover {
     background-color: #0056b3;
 }
 
+/* Edge 兼容性增强：去掉 transform 可能的无效问题 */
 .search-box button:active {
-    transform: scale(0.95);
+    background-color: #004494;
 }
 
 
